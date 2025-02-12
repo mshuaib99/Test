@@ -1,22 +1,32 @@
 {
-  "homepage": "https://mshuaib99.github.io/Test",
   "name": "my-react-app",
   "version": "0.1.0",
+  "homepage": "https://animeartifacts3d.com/",
   "private": true,
   "dependencies": {
-    "cra-template": "1.2.0",
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "@fortawesome/free-regular-svg-icons": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@testing-library/user-event": "^14.6.1",
+    "bootstrap": "^5.3.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-ratings-declarative": "^3.4.1",
+    "react-router-dom": "^7.1.5",
     "react-scripts": "5.0.1",
     "web-vitals": "^4.2.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -37,6 +47,8 @@
     ]
   },
   "devDependencies": {
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
     "gh-pages": "^6.3.0"
   }
 }
