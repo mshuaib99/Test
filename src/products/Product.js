@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function Product(props) {
   const price = 10000;
   let percentOff;
-  let offPrice = `${price}Ks`;
+  let offPrice = `$${price}USD`;
 
   if (props.percentOff && props.percentOff > 0) {
     percentOff = (
@@ -19,7 +19,7 @@ function Product(props) {
 
     offPrice = (
       <>
-        <del>{price}Ks</del> {price - (props.percentOff * price) / 100}Ks
+        <del>{price}USD</del> {price - (props.percentOff * price) / 100}USD
       </>
     );
   }
